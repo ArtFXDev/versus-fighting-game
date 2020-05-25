@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\versusgame.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{2A301EBB-72BC-4582-BA36-FB022CA479D6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\versusgame.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\versusgameEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{B1BB50B9-6BEE-4B50-8FF6-D4092E03271F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\versusgame">
+      <UniqueIdentifier>{8B71B72B-D69E-423A-A259-367F834D1CE4}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\versusgame\versusgame.Build.cs">
+      <Filter>Source\versusgame</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\versusgame\versusgame.cpp">
+      <Filter>Source\versusgame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\versusgame\versusgame.h">
+      <Filter>Source\versusgame</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\versusgame\versusgameGameModeBase.cpp">
+      <Filter>Source\versusgame</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\versusgame\versusgameGameModeBase.h">
+      <Filter>Source\versusgame</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

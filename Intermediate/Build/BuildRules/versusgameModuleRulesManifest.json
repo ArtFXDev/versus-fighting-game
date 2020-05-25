@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"E:\\developpement\\Nouveau dossier\\versusgame\\Source\\versusgame\\versusgame.Build.cs",
+		"E:\\developpement\\Nouveau dossier\\versusgame\\Source\\versusgame.Target.cs",
+		"E:\\developpement\\Nouveau dossier\\versusgame\\Source\\versusgameEditor.Target.cs"
+	],
+	"EngineVersion": "4.24.3"
+}
