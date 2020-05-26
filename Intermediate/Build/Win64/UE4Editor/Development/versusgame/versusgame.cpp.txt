@@ -1,2 +1,2 @@
-E:\developpement\versus-fighting-game\Intermediate\Build\Win64\UE4Editor\Development\versusgame\Definitions.versusgame.h
-E:\developpement\versus-fighting-game\Source\versusgame\versusgame.h
+E:\developpement\side\versusgame\Intermediate\Build\Win64\UE4Editor\Development\versusgame\Definitions.versusgame.h
+E:\developpement\side\versusgame\Source\versusgame\versusgame.h

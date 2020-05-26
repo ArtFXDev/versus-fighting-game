@@ -1,3 +1,0 @@
-E:\developpement\versus-fighting-game\Intermediate\Build\Win64\UE4\Development\versusgame\Definitions.versusgame.h
-D:\UE4install\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-D:\UE4install\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h

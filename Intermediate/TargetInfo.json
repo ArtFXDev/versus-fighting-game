@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "versusgame",
-			"Path": "E:\\developpement\\Nouveau dossier\\versusgame\\Source\\versusgame.Target.cs",
+			"Path": "E:\\developpement\\side\\versusgame\\Source\\versusgame.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "versusgameEditor",
-			"Path": "E:\\developpement\\Nouveau dossier\\versusgame\\Source\\versusgameEditor.Target.cs",
+			"Path": "E:\\developpement\\side\\versusgame\\Source\\versusgameEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 public class versusgameEditorTarget : TargetRules
 {
-	public versusgameEditorTarget( TargetInfo Target) : base(Target)
+	public versusgameEditorTarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "versusgame" } );
+		ExtraModuleNames.Add("versusgame");
 	}
 }
