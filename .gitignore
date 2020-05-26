@@ -1,5 +1,7 @@
 .vs
 
+.obj
+
 # Precompiled Headers
 *.gch
 *.pch
