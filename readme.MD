@@ -3,7 +3,7 @@
 A game developed as part of a whole class workshop at Artfx
 
 
-git add . 
+git add . pour ajouter les fichiers modifié 
 
 
 
@@ -28,3 +28,4 @@ T_Rock_00_BC - Base Color Texture for a Rock version 00
 ```batch
 BP_ACTOR_Rock_00 - Blue Print Actor name Rock version 00
 ```
+
