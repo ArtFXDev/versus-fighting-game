@@ -1,6 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/dnieol0byy3775el?svg=true)](https://ci.appveyor.com/project/Polygoniste/versus-fighting-game)
+
 A game developed as part of a whole class workshop at Artfx
-
-
 
 
 ---
