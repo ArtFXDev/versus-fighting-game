@@ -31,8 +31,8 @@
 /wd4838
 /we4668
 /I .
-/I "E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\UE4Editor\Inc\versusgame"
-/I "E:\developpement\Nouveau dossier\versusgame\Source"
+/I E:\developpement\versus-fighting-game\Intermediate\Build\Win64\UE4Editor\Inc\versusgame
+/I E:\developpement\versus-fighting-game\Source
 /I Runtime
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
@@ -259,12 +259,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\versusgameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\versusgameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\versusgameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\UE4Editor\Inc\versusgame\versusgameGameModeBase.gen.cpp"
-/FI"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\UE4Editor\Development\versusgame\Definitions.versusgame.h"
-/Fo"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\UE4Editor\Development\versusgame\versusgameGameModeBase.gen.cpp.obj"
+/FI"E:\developpement\versus-fighting-game\Intermediate\Build\Win64\versusgameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"E:\developpement\versus-fighting-game\Intermediate\Build\Win64\versusgameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"E:\developpement\versus-fighting-game\Intermediate\Build\Win64\versusgameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"E:\developpement\versus-fighting-game\Intermediate\Build\Win64\UE4Editor\Inc\versusgame\versusgameGameModeBase.gen.cpp"
+/FI"E:\developpement\versus-fighting-game\Intermediate\Build\Win64\UE4Editor\Development\versusgame\Definitions.versusgame.h"
+/Fo"E:\developpement\versus-fighting-game\Intermediate\Build\Win64\UE4Editor\Development\versusgame\versusgameGameModeBase.gen.cpp.obj"
 /TP
 /GR-
 /W4
