@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-versusgame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\versusgameEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\UE4Editor\Development\versusgame\versusgame.cpp.obj"
+"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\UE4Editor\Development\versusgame\versusgameGameModeBase.cpp.obj"
+"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\UE4Editor\Development\versusgame\versusgame.init.gen.cpp.obj"
+"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\UE4Editor\Development\versusgame\versusgameGameModeBase.gen.cpp.obj"
+"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\UE4Editor\Development\versusgame\Default.rc2.res"
+/OUT:"E:\developpement\Nouveau dossier\versusgame\Intermediate\Build\Win64\UE4Editor\Development\versusgame\UE4Editor-versusgame.lib"
+/INCLUDE:IMPLEMENT_MODULE_versusgame
