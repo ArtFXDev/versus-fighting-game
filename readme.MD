@@ -3,7 +3,7 @@
 A game developed as part of a whole class workshop at Artfx
 
 
-git add . pour ajouter les fichiers modifié 
+https://www.digitalocean.com/community/cheatsheets/how-to-use-git-a-reference-guide
 
 
 
