@@ -4,18 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "SmashBrosTestCharacter.h"
 #include "SmashBrosTestGameMode.generated.h"
-
-
-UENUM(BlueprintType)
-enum class ECharacterClass : uint8
-{
-	VE_Default UMETA(DisplayName = "Balanced"),
-	VE_FunkyAgent UMETA(DisplayName = "FunkyAgent"),
-	VE_Oscar UMETA(DisplayName = "Oscar"),
-	VE_TeddyBurn UMETA(DisplayName = "TeddyBurn"),
-	VE_BoxWarrior UMETA(DisplayName = "BoxWarrior")
-};
 
 UCLASS(minimalapi)
 class ASmashBrosTestGameMode : public AGameModeBase
@@ -24,6 +14,12 @@ class ASmashBrosTestGameMode : public AGameModeBase
 
 public:
 	ASmashBrosTestGameMode();
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player References")
+	ASmashBrosTestCharacter* player1;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player References")
+	ASmashBrosTestCharacter* player2;
 };
 
 
