@@ -42,6 +42,7 @@ ASmashBrosTestCharacter::ASmashBrosTestCharacter()
 	GetCharacterMovement()->MaxFlySpeed = 600.f;
 
 	playerHealth = 1.00f;
+	wasPunchUsed = false;
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
@@ -86,9 +87,12 @@ void ASmashBrosTestCharacter::TouchStopped(const ETouchIndex::Type FingerIndex, 
 }
 
 
+//Damage dealings
+
 void ASmashBrosTestCharacter::StartAttack1()
 {
 	UE_LOG(LogTemp, Warning, TEXT("We are using the first attack"));
+	wasPunchUsed = true;
 	TakeDamage(0.05f);
 }
 
@@ -102,6 +106,38 @@ void ASmashBrosTestCharacter::StartAttack3()
 {
 	UE_LOG(LogTemp, Warning, TEXT("We are using the third attack"));
 	TakeDamage(0.15f);
+}
+
+//Adding the Player 2 attacks and controls
+
+void ASmashBrosTestCharacter::FunkyKeyboardAttack1()
+{
+	StartAttack1();
+}
+
+void ASmashBrosTestCharacter::FunkyKeyboardAttack2()
+{
+	StartAttack2();
+}
+
+void ASmashBrosTestCharacter::FunkyKeyboardAttack3()
+{
+	StartAttack3();
+}
+
+void ASmashBrosTestCharacter::FunkyKeyboardJump()
+{
+	Jump();
+}
+
+void ASmashBrosTestCharacter::FunkyKeyboardStopJumping()
+{
+	StopJumping();
+}
+
+void ASmashBrosTestCharacter::FunkyKeyboardMoveRight(float _value)
+{
+	MoveRight(_value);
 }
 
 void ASmashBrosTestCharacter::TakeDamage(float _damageAmount)

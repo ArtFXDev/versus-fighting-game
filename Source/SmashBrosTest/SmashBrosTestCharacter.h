@@ -19,9 +19,31 @@ class ASmashBrosTestCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraBoom;
 
+	//Setting up the player different attacks
 	void StartAttack1();
 	void StartAttack2();
 	void StartAttack3();
+
+
+	//When in Keyboard-only Mode, use these functions to perform action with Player2
+
+	UFUNCTION(BlueprintCallable, Category = "Player Moves")
+	void FunkyKeyboardAttack1();
+
+	UFUNCTION(BlueprintCallable, Category = "Player Moves")
+	void FunkyKeyboardAttack2();
+
+	UFUNCTION(BlueprintCallable, Category = "Player Moves")
+	void FunkyKeyboardAttack3();
+
+	UFUNCTION(BlueprintCallable, Category ="Player Moves")
+	void FunkyKeyboardJump();
+
+	UFUNCTION(BlueprintCallable, Category = "Player Moves")
+	void FunkyKeyboardStopJumping();
+
+	UFUNCTION(BlueprintCallable, Category = "Player Moves")
+	void FunkyKeyboardMoveRight(float _value);
 
 
 protected:
@@ -44,6 +66,10 @@ protected:
 
 	//Damage the player
 	void TakeDamage(float _damageAmount);
+
+	//Has the player used the basic attack ?
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attacks")
+	bool wasPunchUsed;
 
 	//Current Health
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
