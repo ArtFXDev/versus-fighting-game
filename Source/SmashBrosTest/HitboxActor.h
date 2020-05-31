@@ -24,6 +24,9 @@ public:
 	// Sets default values for this actor's properties
 	AHitboxActor();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+	float hitboxDamage;
+
 	//The hitbox enum instance.
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
 	EHitboxEnum hitboxType;
