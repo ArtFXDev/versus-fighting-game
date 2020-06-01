@@ -45,6 +45,8 @@ ASmashBrosTestCharacter::ASmashBrosTestCharacter()
 	hurtbox = nullptr;
 	playerHealth = 1.00f;
 	wasPunchUsed = false;
+	wasKickUsed = false;
+	wasHeadButtUsed = false;
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
@@ -122,13 +124,13 @@ void ASmashBrosTestCharacter::StartAttack1()
 void ASmashBrosTestCharacter::StartAttack2()
 {
 	UE_LOG(LogTemp, Warning, TEXT("We are using the second attack"));
-	TakeDamage(0.10f);
+	wasKickUsed = true;
 }
 
 void ASmashBrosTestCharacter::StartAttack3()
 {
 	UE_LOG(LogTemp, Warning, TEXT("We are using the third attack"));
-	TakeDamage(0.15f);
+	wasHeadButtUsed = true;
 }
 
 //Adding the Player 2 attacks and controls
