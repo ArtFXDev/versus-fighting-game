@@ -26,27 +26,6 @@ class ASmashBrosTestCharacter : public ACharacter
 	void StartAttack2();
 	void StartAttack3();
 
-	//When in keyboard-only mode
-	UFUNCTION(BlueprintCallable)
-	void P2keyboardAttack1();
-
-	UFUNCTION(BlueprintCallable)
-	void P2keyboardAttack2();
-
-	UFUNCTION(BlueprintCallable)
-	void P2keyboardAttack3();
-
-	UFUNCTION(BlueprintCallable)
-	void P2keyboardJump();
-
-	UFUNCTION(BlueprintCallable)
-	void P2keyboardStopJumping();
-
-	UFUNCTION(BlueprintCallable)
-	void P2keyboardMoveRight(float _val);
-
-
-
 	//When in Keyboard-only Mode, use these functions to perform action with Player2
 
 	UFUNCTION(BlueprintCallable, Category = "Player Moves")
@@ -92,10 +71,6 @@ protected:
 	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")
 	//ECharacterClass characterClass;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player References")
-	AActor* hurtbox;
-
-
 	//Damage the player
 	UFUNCTION(BlueprintCallable, Category = "Hitbox")
 	void TakeDamage(float _damageAmount);
@@ -108,7 +83,7 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
 	float playerHealth;
 
-	//DeviceForMutiplayer
+	//DeviceForMutiplayer  NOT NECESSARY
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controller")
 	bool isDeviceForMultiplePlayers;
 

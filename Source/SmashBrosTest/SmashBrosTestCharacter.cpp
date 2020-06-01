@@ -46,8 +46,6 @@ ASmashBrosTestCharacter::ASmashBrosTestCharacter()
 	playerHealth = 1.00f;
 	wasPunchUsed = false;
 
-	hurtbox = nullptr;
-
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
@@ -119,9 +117,6 @@ void ASmashBrosTestCharacter::StartAttack1()
 {
 	UE_LOG(LogTemp, Warning, TEXT("We are using the first attack"));
 	wasPunchUsed = true;
-
-	TakeDamage(0.05f);
-
 }
 
 void ASmashBrosTestCharacter::StartAttack2()
@@ -177,35 +172,5 @@ void ASmashBrosTestCharacter::TakeDamage(float _damageAmount)
 	{
 		playerHealth = 0.00f;
 	}
-}
-
-void ASmashBrosTestCharacter::P2keyboardAttack1()
-{
-	StartAttack1();
-}
-
-void ASmashBrosTestCharacter::P2keyboardAttack2()
-{
-	StartAttack2();
-}
-
-void ASmashBrosTestCharacter::P2keyboardAttack3()
-{
-	StartAttack3();
-}
-
-void ASmashBrosTestCharacter::P2keyboardJump()
-{
-	Jump();
-}
-
-void ASmashBrosTestCharacter::P2keyboardStopJumping()
-{
-	StopJumping();
-}
-
-void ASmashBrosTestCharacter::P2keyboardMoveRight(float Value)
-{
-	MoveRight(Value);
 }
 
