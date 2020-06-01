@@ -24,6 +24,8 @@ public:
 	// Sets default values for this actor's properties
 	AHitboxActor();
 
+	//The dmg this hitbox will do
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
 	float hitboxDamage;
 
