@@ -46,6 +46,7 @@ class ASmashBrosTestCharacter : public ACharacter
 	void FunkyKeyboardMoveRight(float _value);
 
 
+
 protected:
 
 	/** Called for side to side input */
@@ -80,6 +81,10 @@ protected:
 	//Current Health
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
 	float playerHealth;
+
+	//DeviceForMutiplayer
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Controller")
+	bool isDeviceForMultiplePlayers;
 
 public:
 	ASmashBrosTestCharacter();

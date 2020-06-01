@@ -1,6 +1,7 @@
 // Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
 
 #include "SmashBrosTestCharacter.h"
+#include "SmashBrosTestGameMode.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
@@ -54,20 +55,42 @@ ASmashBrosTestCharacter::ASmashBrosTestCharacter()
 
 void ASmashBrosTestCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
-	// set up gameplay key bindings
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
-	PlayerInputComponent->BindAxis("MoveRight", this, &ASmashBrosTestCharacter::MoveRight);
+	if (auto gameMode = Cast<ASmashBrosTestGameMode>(GetWorld()->GetAuthGameMode()))
+	{
+		if (gameMode->player1 == this)
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Player 1 has bound their controls"));
+			// set up gameplay key bindings
+			PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+			PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
+			PlayerInputComponent->BindAxis("MoveRight", this, &ASmashBrosTestCharacter::MoveRight);
 
-	PlayerInputComponent->BindAction("Attack1", IE_Pressed, this, &ASmashBrosTestCharacter::StartAttack1);
-	//PlayerInputComponent->BindAction("Attack1", IE_Released, this, &ASmashBrosTestCharacter::StopAttack1);
-	PlayerInputComponent->BindAction("Attack2", IE_Pressed, this, &ASmashBrosTestCharacter::StartAttack2);
-	//PlayerInputComponent->BindAction("Attack2", IE_Released, this, &ASmashBrosTestCharacter::StopAttack2);
-	PlayerInputComponent->BindAction("Attack3", IE_Pressed, this, &ASmashBrosTestCharacter::StartAttack3);
-	//PlayerInputComponent->BindAction("Attack3", IE_Released, this, &ASmashBrosTestCharacter::StopAttack3);
+			PlayerInputComponent->BindAction("Attack1", IE_Pressed, this, &ASmashBrosTestCharacter::StartAttack1);
+			//PlayerInputComponent->BindAction("Attack1", IE_Released, this, &ASmashBrosTestCharacter::StopAttack1);
+			PlayerInputComponent->BindAction("Attack2", IE_Pressed, this, &ASmashBrosTestCharacter::StartAttack2);
+			//PlayerInputComponent->BindAction("Attack2", IE_Released, this, &ASmashBrosTestCharacter::StopAttack2);
+			PlayerInputComponent->BindAction("Attack3", IE_Pressed, this, &ASmashBrosTestCharacter::StartAttack3);
+			//PlayerInputComponent->BindAction("Attack3", IE_Released, this, &ASmashBrosTestCharacter::StopAttack3);
+		}
+		else
+		{
+			UE_LOG(LogTemp, Warning, TEXT("Player 2 has bound their controls"));
+			// set up gameplay key bindings
+			PlayerInputComponent->BindAction("JumpP2", IE_Pressed, this, &ACharacter::Jump);
+			PlayerInputComponent->BindAction("JumpP2", IE_Released, this, &ACharacter::StopJumping);
+			PlayerInputComponent->BindAxis("MoveRightP2", this, &ASmashBrosTestCharacter::MoveRight);
 
-	PlayerInputComponent->BindTouch(IE_Pressed, this, &ASmashBrosTestCharacter::TouchStarted);
-	PlayerInputComponent->BindTouch(IE_Released, this, &ASmashBrosTestCharacter::TouchStopped);
+			PlayerInputComponent->BindAction("Attack1P2", IE_Pressed, this, &ASmashBrosTestCharacter::StartAttack1);
+			//PlayerInputComponent->BindAction("Attack1P2", IE_Released, this, &ASmashBrosTestCharacter::StopAttack1);
+			PlayerInputComponent->BindAction("Attack2P2", IE_Pressed, this, &ASmashBrosTestCharacter::StartAttack2);
+			//PlayerInputComponent->BindAction("Attack2P2", IE_Released, this, &ASmashBrosTestCharacter::StopAttack2);
+			PlayerInputComponent->BindAction("Attack3P2", IE_Pressed, this, &ASmashBrosTestCharacter::StartAttack3);
+			//PlayerInputComponent->BindAction("Attack3P2", IE_Released, this, &ASmashBrosTestCharacter::StopAttack3);
+		}
+
+	}
+	/*PlayerInputComponent->BindTouch(IE_Pressed, this, &ASmashBrosTestCharacter::TouchStarted);
+	PlayerInputComponent->BindTouch(IE_Released, this, &ASmashBrosTestCharacter::TouchStopped);*/
 }
 
 void ASmashBrosTestCharacter::MoveRight(float Value)
