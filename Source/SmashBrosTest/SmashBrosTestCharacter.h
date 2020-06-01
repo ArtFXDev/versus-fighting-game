@@ -68,9 +68,6 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
 	AActor* hurtbox;
 
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")
-	//ECharacterClass characterClass;
-
 	//Damage the player
 	UFUNCTION(BlueprintCallable, Category = "Hitbox")
 	void TakeDamage(float _damageAmount);
@@ -78,6 +75,12 @@ protected:
 	//Has the player used the basic attack ?
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attacks")
 	bool wasPunchUsed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attacks")
+	bool wasKickUsed;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attacks")
+	bool wasHeadButtUsed;
 
 	//Current Health
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
