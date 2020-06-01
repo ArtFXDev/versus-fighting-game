@@ -1,5 +1,0 @@
-D:\UnrealProjects\versus-fighting-game\Intermediate\Build\Win64\UE4Editor\Development\SmashBrosTest\Definitions.SmashBrosTest.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-D:\UnrealProjects\versus-fighting-game\Source\SmashBrosTest/BaseGameInstance.h
-d:\unrealprojects\versus-fighting-game\intermediate\build\win64\ue4editor\inc\smashbrostest\BaseGameInstance.generated.h
