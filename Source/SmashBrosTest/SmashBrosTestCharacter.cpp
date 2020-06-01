@@ -96,6 +96,9 @@ void ASmashBrosTestCharacter::StartAttack1()
 {
 	UE_LOG(LogTemp, Warning, TEXT("We are using the first attack"));
 	wasPunchUsed = true;
+
+	TakeDamage(0.05f);
+
 }
 
 void ASmashBrosTestCharacter::StartAttack2()
