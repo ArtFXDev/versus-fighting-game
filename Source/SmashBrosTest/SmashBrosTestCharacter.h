@@ -11,18 +11,40 @@ class ASmashBrosTestCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
-	/** Side view camera */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	class UCameraComponent* SideViewCameraComponent;
+	///** Side view camera */
+	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	//class UCameraComponent* SideViewCameraComponent;
 
-	/** Camera boom positioning the camera beside the character */
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
-	class USpringArmComponent* CameraBoom;
+	///** Camera boom positioning the camera beside the character */
+	//UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	//class USpringArmComponent* CameraBoom;
+
+
 
 	//Setting up the player different attacks
 	void StartAttack1();
 	void StartAttack2();
 	void StartAttack3();
+
+	//When in keyboard-only mode
+	UFUNCTION(BlueprintCallable)
+	void P2keyboardAttack1();
+
+	UFUNCTION(BlueprintCallable)
+	void P2keyboardAttack2();
+
+	UFUNCTION(BlueprintCallable)
+	void P2keyboardAttack3();
+
+	UFUNCTION(BlueprintCallable)
+	void P2keyboardJump();
+
+	UFUNCTION(BlueprintCallable)
+	void P2keyboardStopJumping();
+
+	UFUNCTION(BlueprintCallable)
+	void P2keyboardMoveRight(float _val);
+
 
 
 	//When in Keyboard-only Mode, use these functions to perform action with Player2
@@ -63,6 +85,10 @@ protected:
 	
 	// End of APawn interface
 
+	//Hurt Box
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Hitbox")
+	AActor* hurtbox;
+
 	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Character")
 	//ECharacterClass characterClass;
 
@@ -89,8 +115,8 @@ protected:
 public:
 	ASmashBrosTestCharacter();
 
-	/** Returns SideViewCameraComponent subobject **/
-	FORCEINLINE class UCameraComponent* GetSideViewCameraComponent() const { return SideViewCameraComponent; }
-	/** Returns CameraBoom subobject **/
-	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+	///** Returns SideViewCameraComponent subobject **/
+	//FORCEINLINE class UCameraComponent* GetSideViewCameraComponent() const { return SideViewCameraComponent; }
+	///** Returns CameraBoom subobject **/
+	//FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
 };
