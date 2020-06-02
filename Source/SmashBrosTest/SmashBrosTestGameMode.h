@@ -14,7 +14,6 @@ class ASmashBrosTestGameMode : public AGameModeBase
 
 public:
 	ASmashBrosTestGameMode();
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player References")
 	ASmashBrosTestCharacter* player1;
 
