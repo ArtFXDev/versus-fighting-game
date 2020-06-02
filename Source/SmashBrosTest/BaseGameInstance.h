@@ -12,9 +12,8 @@
 UENUM(BlueprintType)
 enum class ECharacterClass : uint8
 {
-	VE_Default UMETA(DisplayName = "Balanced"),
+	VE_Default UMETA(DisplayName = "Oscar"),
 	VE_FunkyAgent UMETA(DisplayName = "FunkyAgent"),
-	VE_Oscar UMETA(DisplayName = "Oscar"),
 	VE_TeddyBurn UMETA(DisplayName = "TeddyBurn"),
 	VE_BoxWarrior UMETA(DisplayName = "BoxWarrior")
 };
@@ -22,9 +21,8 @@ enum class ECharacterClass : uint8
 UENUM(BlueprintType)
 enum class ECharacterClass2 : uint8
 {
-	VE_Default UMETA(DisplayName = "Balanced"),
+	VE_Default UMETA(DisplayName = "Oscar"),
 	VE_FunkyAgent UMETA(DisplayName = "FunkyAgent"),
-	VE_Oscar UMETA(DisplayName = "Oscar"),
 	VE_TeddyBurn UMETA(DisplayName = "TeddyBurn"),
 	VE_BoxWarrior UMETA(DisplayName = "BoxWarrior")
 };
