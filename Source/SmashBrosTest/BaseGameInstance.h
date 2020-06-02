@@ -19,6 +19,16 @@ enum class ECharacterClass : uint8
 	VE_BoxWarrior UMETA(DisplayName = "BoxWarrior")
 };
 
+UENUM(BlueprintType)
+enum class ECharacterClass2 : uint8
+{
+	VE_Default UMETA(DisplayName = "Balanced"),
+	VE_FunkyAgent UMETA(DisplayName = "FunkyAgent"),
+	VE_Oscar UMETA(DisplayName = "Oscar"),
+	VE_TeddyBurn UMETA(DisplayName = "TeddyBurn"),
+	VE_BoxWarrior UMETA(DisplayName = "BoxWarrior")
+};
+
 UCLASS()
 class SMASHBROSTEST_API UBaseGameInstance : public UGameInstance
 {
@@ -27,4 +37,6 @@ class SMASHBROSTEST_API UBaseGameInstance : public UGameInstance
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player References")
 	ECharacterClass characterClass;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Player References")
+	ECharacterClass2 characterClass2;
 };
