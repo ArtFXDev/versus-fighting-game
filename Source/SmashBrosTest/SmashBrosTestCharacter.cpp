@@ -47,6 +47,7 @@ ASmashBrosTestCharacter::ASmashBrosTestCharacter()
 	wasPunchUsed = false;
 	wasKickUsed = false;
 	wasHeadButtUsed = false;
+	wasRangeAttackUsed = false;
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
@@ -125,6 +126,7 @@ void ASmashBrosTestCharacter::StartAttack2()
 {
 	UE_LOG(LogTemp, Warning, TEXT("We are using the second attack"));
 	wasKickUsed = true;
+	wasRangeAttackUsed = true;
 }
 
 void ASmashBrosTestCharacter::StartAttack3()
@@ -150,6 +152,12 @@ void ASmashBrosTestCharacter::FunkyKeyboardAttack3()
 	StartAttack3();
 }
 
+//TESTTING CARDBOARDKNIGHT ATTACKS
+void ASmashBrosTestCharacter::KnightKeyboardAttack3()
+{
+	StartAttack3();
+}
+
 void ASmashBrosTestCharacter::FunkyKeyboardJump()
 {
 	Jump();
@@ -165,6 +173,7 @@ void ASmashBrosTestCharacter::FunkyKeyboardMoveRight(float _value)
 	MoveRight(_value);
 }
 
+//Damage dealing depending of hitboxes
 void ASmashBrosTestCharacter::TakeDamage(float _damageAmount)
 {
 	UE_LOG(LogTemp, Warning, TEXT("We are taking %f points damages"), _damageAmount);
@@ -176,3 +185,18 @@ void ASmashBrosTestCharacter::TakeDamage(float _damageAmount)
 	}
 }
 
+
+//Cardboard knight stun mechanic
+void ASmashBrosTestCharacter::stunPlayer(bool playerIsStun)
+{
+	if (playerIsStun == true)
+	{
+		GetCharacterMovement()->MaxWalkSpeed = 0.f;
+	}
+	else
+	{
+		GetCharacterMovement()->MaxWalkSpeed = 600.f;
+	}
+}
+
+//Oscar carrot attack
