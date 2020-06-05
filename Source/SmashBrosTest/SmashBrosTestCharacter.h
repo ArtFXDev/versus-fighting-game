@@ -47,6 +47,11 @@ class ASmashBrosTestCharacter : public ACharacter
 	void FunkyKeyboardMoveRight(float _value);
 
 
+	//Attacks with cardboard Knight
+	UFUNCTION(BlueprintCallable, Category = "Player Moves")
+	void KnightKeyboardAttack3();
+
+
 
 protected:
 
@@ -72,6 +77,11 @@ protected:
 	UFUNCTION(BlueprintCallable, Category = "Hitbox")
 	void TakeDamage(float _damageAmount);
 
+
+	//Stun the player
+	UFUNCTION(BlueprintCallable, Category = "Stun")
+	void stunPlayer(bool playerIsStun);
+
 	//Has the player used the basic attack ?
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attacks")
 	bool wasPunchUsed;
@@ -81,6 +91,10 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attacks")
 	bool wasHeadButtUsed;
+
+	//Oscar Attacks
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attacks")
+	bool wasRangeAttackUsed;
 
 	//Current Health
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Health")
