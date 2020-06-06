@@ -1,3 +1,0 @@
-E:\developpement\versus-fighting-game\Intermediate\Build\Win64\UE4Editor\Development\SmashBrosTest\Definitions.SmashBrosTest.h
-E:\developpement\versus-fighting-game\Source\SmashBrosTest\BaseGameInstance.h
-E:\developpement\versus-fighting-game\Intermediate\Build\Win64\UE4Editor\Inc\SmashBrosTest\BaseGameInstance.generated.h
