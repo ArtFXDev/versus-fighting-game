@@ -1,0 +1,15 @@
+E:\developpement\versus-fighting-game\Intermediate\Build\Win64\UE4Editor\Development\SmashBrosTest\Definitions.SmashBrosTest.h
+D:\UE4install\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\UE4install\UE_4.24\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+E:\developpement\versus-fighting-game\Source\SmashBrosTest/SmashBrosTestGameMode.h
+D:\UE4install\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+D:\UE4install\UE_4.24\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+D:\UE4install\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+D:\UE4install\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+E:\developpement\versus-fighting-game\Source\SmashBrosTest\SmashBrosTestCharacter.h
+D:\UE4install\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+D:\UE4install\UE_4.24\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+D:\UE4install\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+D:\UE4install\UE_4.24\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+E:\developpement\versus-fighting-game\Intermediate\Build\Win64\UE4Editor\Inc\SmashBrosTest\SmashBrosTestCharacter.generated.h
+E:\developpement\versus-fighting-game\Intermediate\Build\Win64\UE4Editor\Inc\SmashBrosTest\SmashBrosTestGameMode.generated.h

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "SmashBrosTest",
+			"Path": "E:\\developpement\\versus-fighting-game\\Source\\SmashBrosTest.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "SmashBrosTestEditor",
+			"Path": "E:\\developpement\\versus-fighting-game\\Source\\SmashBrosTestEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
